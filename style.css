@@ -1,0 +1,354 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5;
+  color: #14213d;
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  font-size: 1.2rem;
+}
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  padding: 10px;
+  padding-top: 30px;
+  color: brown;
+  background-color: #14213d;
+  margin: 0;
+  border-bottom: 3px ridge #fca311;
+  outline: 2px outset tomato;
+}
+header h1 {
+  margin: 0;
+  text-shadow: 1px 1px 1px #14213d, 3px 3px 5px #fca311;
+  font-size: 2rem;
+  text-align: center;
+}
+header h2 {
+  margin-top: -2px;
+  border: 1px dashed tomato;
+  font-size: 1.5rem;
+  outline: 1px groove #e5e5e5;
+  padding: 0 5px;
+}
+.weaponChoice {
+  padding-top: 15px;
+  padding-bottom: 70px;
+  box-shadow: 10px 0px 15px #14213d;
+  background: tomato;
+}
+.weapons {
+  display: flex;
+  justify-content: space-around;
+}
+.weapon {
+  width: 70px;
+  height: 80px;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  outline: 3px solid #fca311;
+  border: 3px dashed #14213d;
+  box-shadow: 0 0 15px #14213d;
+  margin: 10px;
+  cursor: pointer;
+}
+.weapon img {
+  width: 100%;
+  height: 100%;
+}
+.weapon span {
+  margin-bottom: 10px;
+}
+.game {
+  flex-direction: column;
+  margin: 0 auto;
+}
+.scores {
+  background: tomato;
+  border: 3px groove #fca311;
+  outline: 2px ridge tomato;
+  padding: 0 15px;
+  box-shadow: 0 0 20px #14213d;
+  color: #14213d;
+  font-weight: 600;
+  margin-top: 20px;
+  font-size: 0.8rem;
+}
+.scores h2 {
+  font-size: 0.9rem;
+  margin: 2px 0;
+  font-weight: 700;
+}
+.round {
+  width: 180px;
+  height: 65px;
+  justify-content: space-around;
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: 0 0 15px #14213d;
+  background-color: #14213d;
+  color: #fca311;
+  font-size: 0.8rem;
+  border: 2px ridge #fca311;
+  outline: 1px groove #14213d;
+}
+.roundImage {
+  display: flex;
+  flex-direction: row;
+}
+.round img {
+  width: 30px;
+  height: 30px;
+  background-color: #fca311;
+  border-radius: 8px;
+  margin: 5px;
+}
+.roundLabel {
+  margin-left: 0;
+}
+.vs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.vs > div:first-child {
+  margin-right: 15px;
+}
+.vs > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reset {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  padding: 5px;
+  box-shadow: 1px 1px 2px #fca311;
+  background: #14213d;
+  color: #fca311;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px tomato;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 60%;
+  color: #303030;
+  text-shadow: 1px 1px 1px#c47d0d;
+  font-size: 14px;
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  margin-top: 0 auto;
+  height: 15%;
+}
+.row {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.social-links {
+  display: flex;
+  width: 100px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+.social-links img {
+  width: 30px;
+  height: 35px;
+}
+.social-links img:first-child {
+  border-radius: 8px;
+}
+footer a,
+footer a:visited {
+  color: #525252;
+}
+footer a:hover,
+footer a:focus {
+  color: #fff;
+}
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  header {
+    padding: 30px;
+    padding-top: 60px;
+  }
+  header h1 {
+    font-size: 3em;
+  }
+  .weapon {
+    width: 100px;
+    height: 120px;
+  }
+  .weapon span {
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  .game {
+    flex-direction: column;
+  }
+  .scores {
+    padding: 0 25px;
+    margin-top: 25px;
+    font-size: 1.1rem;
+  }
+  .scores h2 {
+    font-size: 1.5rem;
+  }
+  .round {
+    width: 250px;
+    height: 70px;
+    font-size: 1rem;
+    border: 5px ridge #fca311;
+    outline: 2px groove #14213d;
+  }
+  .reset {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  footer {
+    margin-top: 25%;
+  }
+  .social-links img {
+    width: 35px;
+    height: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+  header {
+    padding: 25px;
+    padding-top: 90px;
+  }
+  header h1 {
+    font-size: 4em;
+  }
+  header h2 {
+    font-size: 2rem;
+  }
+  .weapon {
+    width: 170px;
+    height: 170px;
+  }
+  .game {
+    position: relative;
+    width: 90%;
+  }
+  .scores {
+    flex-direction: column;
+    position: absolute;
+    margin-right: 300px;
+    top: 70px;
+    left: 160px;
+    border: 5px groove #fca311;
+    outline: 2px ridge tomato;
+    padding: 10px 25px;
+  }
+  .scores h2 {
+    font-size: 2rem;
+  }
+  .round {
+    width: 350px;
+    height: 75px;
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+  .total {
+    margin-left: 300px;
+    margin-top: 50px;
+  }
+  footer {
+    margin-top: 45%;
+  }
+  .social-links {
+    width: 140px;
+  }
+}
+@media (min-width: 1280px) {
+  .weapon {
+    width: 180px;
+    height: 180px;
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+  .game {
+    flex-direction: row;
+    position: relative;
+    /* margin: 0 auto; */
+    width: 90%;
+  }
+  .scores {
+    top: 70px;
+    left: 230px;
+    border: 5px groove #fca311;
+    outline: 5px ridge tomato;
+    padding: 10px 35px;
+  }
+  .round {
+    width: 400px;
+    height: 80px;
+    padding: 15px;
+    color: #fca311;
+    font-size: 1.8rem;
+  }
+  .reset {
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  footer {
+    margin-top: 25%;
+  }
+  .social-links img {
+    width: 40px;
+    height: 45px;
+  }
+}
+@media (min-width: 1430px) {
+  .game {
+    width: 75%;
+  }
+  .scores {
+    top: 70px;
+    left: 150px;
+    border: 5px groove #fca311;
+    outline: 5px ridge tomato;
+    padding: 10px 35px;
+  }
+}
+@media (min-width: 1919px) {
+  .game {
+    width: 50%;
+  }
+  .scores {
+    left: 120px;
+  }
+  footer {
+    margin-top: 15%;
+  }
+  .social-links {
+    width: 150px;
+  }
+}

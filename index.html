@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home" class="centered">
+        <h1>ROCK PAPER SCISSORS</h1>
+        <h2>GAME</h2>
+    </header>
+    <div class="weaponChoice centered">
+        <h2>CHOOSE YOUR WEAPON</h2>
+        <div class="weapons">
+            <!-- The three weapons -->
+            <button class="weapon centered" data-button="rock">
+                <img src="./images/rock.png" alt="Hand rock signal" />
+                <span>rock</span>
+            </button>
+            <button class="weapon centered" data-button="scissors">
+                <img src="./images/scissors.png" alt="Hand scissors signal" />
+                <span>scissors</span>
+            </button>
+            <button class="weapon centered" data-button="paper">
+                <img src="./images/paper.png" alt="Hand paper signal" />
+                <span>paper</span>
+            </button>
+        </div>
+    </div>
+    <div class="game centered">
+        <div class="scores centered">
+            <h2>GAME</h2>
+            <div class="vs">
+                <div>
+                    <span>YOU</span>
+                    <span class="playerScore">0</span>
+                </div>
+                <div>
+                    <span>COMPUTER</span>
+                    <span class="computerScore">0</span>
+                </div>
+            </div>
+            <button class="reset">RESET</button>
+        </div>
+        <div class="total centered">
+            <h2>You VS. Computer</h2>
+            <div class="rounds"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="twelve columns">
+               <ul class="social-links">
+                  <li><a href="https://www.linkedin.com/in/yunia-matamoros-15b38b5/"><img src="./images/social_linkedin.png" alt="linkedin icon"></a></li>
+                  <li><a href="https://github.com/Yuni-Me"><img src="./images/social_github.png" alt="Github icon"></a></li>
+               </ul>
+    
+               <ul>
+                <li>Build with love by YHackR ♥️</li>
+               </ul>
+    
+               <ul class="copyright">
+                  <li>&copy; Copyright 2021 YHackR</li>
+                  <li><a title="Styleshout" href="#"> Yuni Mata</a></li>
+               </ul>
+    
+            </div>
+            <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+         </div>
+    </footer>
+    
+    
+    <script src="./app.js"></script>
+</body>
+</html>
